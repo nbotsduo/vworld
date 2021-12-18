@@ -1,0 +1,82 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #262626;
+	font-family: sans-serif;
+}
+
+.containers
+{
+	width: 1000x;
+	margin: 0px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.containers .box{
+	position: relative;
+	width: 1000px;
+	height: 400px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.containers .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.containers .box .imgBox img
+{
+	object-fit: cover; 
+	width: 1000px; 
+	height: 400px;
+	transition: transform 2s;
+}
+.containers .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}
+.containers .box .details
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5%;
+}
+.containers .box:hover .details
+{
+	transform: scaleY(1);
+}
+.containers .box .details .content
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	
+}
+
+.containers .box .details .content h2
+{
+	margin:0;
+	padding:0;
+	font-size: 20px;
+	color: #ff0;
+}
+.containers .box .details .content p
+{
+	margin: 10px 0 0;
+	padding:0;
+}

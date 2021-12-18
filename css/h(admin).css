@@ -1,0 +1,77 @@
+.h1{
+    font-family: Aino-Headline;
+}
+.navbar-text{
+    font-size: 120%;
+    font-weight: 600;
+    font-family: Aino-Headline;
+    }
+    body{
+        background-image: url("../images/d744.jpg");
+        font-family: Aino-Headline;
+        background-repeat: no-repeat;
+  background-size: cover;
+    }
+    .mbox{
+        color: black;
+        width: 70%;
+        height: 30%;
+        padding: 40px;
+        position: relative;
+        top: 50px;
+        left: 13%;
+        font-size: 30px;
+        background-color: azure;
+    }
+    
+    #menu{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .option{
+        margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+/*--Button--*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #7247d4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
